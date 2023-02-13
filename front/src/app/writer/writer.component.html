@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>My Diary App</title>
+  </head>
+  <body>
+
+    <!-- Journal Entry Section -->
+    <section class="section journal-section">
+      <div class="container-fluid">
+        <div class="container-row container-row-journal">
+          <div class="container-item container-item-journal">
+            <form id="entryForm" action="" >
+              <label for="entry-title" class="journal-label">Entry Title</label>
+
+              <!--  -->
+              <input
+                type="text"
+                name="entry-title"
+                id="entry-title"
+                readonly
+                disabled="disabled"
+                class="entry-text-title"
+                placeholder="Fight or give up?"
+              />
+              <label for="entry" class="journal-label">Entry Content</label>
+              <textarea
+                name="daily-entry"
+                id="entry"
+                readonly
+                disabled="disabled"
+                class="entry-text-box"
+                placeholder="What's on your mind today? 💭"
+              >My self- inflicted harm and suicidal thoughts stopped when I was 21. Here I am today … I almost lost my life more times than I can count due to the abuse, and to this day I still cannot work out how I survived. I have been through hell and I have seen some things that a child should never witness or experience at such a young age, but I have come to believe this: if you can live through the worst times of your life, you can live through anything. Your life is beautiful even if one person or many people try and take it from you. You will get days that you just want to give up but you don't, you keep on marching and moving forward. All I can say is, just live your life how you want it. As we get older we learn, as we learn, we succeed, and when we succeed, we achieve greatness and we know we can overcome anything.
+
+            </textarea>
+
+
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-outline-dark" type="button">Views</button>
+                <button class="btn btn-outline-dark" type="button">Comments</button>
+                <button routerLink="/editv" class="btn btn-outline-dark me-md-2" type="button">Edit</button>
+                <button routerLink="/editv" class="btn btn-outline-dark me-md-2" type="button">Delete</button>
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Journal Entry Results -->
+    <section class="section sectionEntryResults" id="entryResultsSection">
+      <div class="container">
+        <div class="container-row entryResultRow"></div>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,91 @@
+
+<div class="naheader">
+  <nav id="navbar">
+    <ul class="menu">
+      <li id="logo" title="Made by Johnny Stiwerson">
+        <p style="color:rgb(15, 15, 16); font-size:30px;">ReadWrite</p>
+      </li>
+      <!-- <li id="trigram" tabindex="-1" title="CLICK ME!&#10I WORK WITHOUT JS :)">
+        <div>&#9776</div>
+      </li> -->
+      <span id="responsive-menu">
+        <ul class="menu">
+          <li class="menu-option">
+            <a href="/" style="text-decoration:none; color:black;">Home</a>
+          </li>
+          <li class="menu-option">
+            <!-- <p>About</p>
+            <ul id="products"> -->
+              <!-- <li>Softwares</li>
+              <li>Hardwares</li>
+              <li>Others</li> -->
+            <!-- </ul> -->
+          </li>
+          <li class="menu-option">
+            <p>About us</p>
+          </li>
+          <li class="menu-option">
+            <p>Contact</p>
+          </li>
+
+          <li id="sign-in">
+           <!-- <p>  <a href="user-login" style="text-decoration:none; color:black;">Sign in</a></p> -->
+            </li>
+
+          <!-- <li id="sign-up">
+            <a href="user-register" style="text-decoration:none; color:black;">Sign up</a>
+           </li> -->
+        </ul>
+      </span>
+    </ul>
+  </nav>
+  </div>
+
+  <div class="container">
+    <div class="screen">
+      <div class="screen__content">
+
+        <br>
+        <div style="color: white; text-align:center; padding:10px; background-color:rgba(94, 90, 90, 0.863);width:80%;margin:auto; border-radius:15px;"class="ban">
+         <h2 >Create Account</h2>
+        </div>
+
+        <form  [formGroup]="form" class="login"  method="post">
+          <div class="login__field">
+            <i class="login__icon fas fa-user"></i>
+            <input type="text" class="login__input" placeholder="User name" formControlName="name">
+          </div>
+
+          <div class="login__field">
+            <i class="login__icon fas fa-user"></i>
+            <input type="text" class="login__input" placeholder="Email" formControlName="email">
+          </div>
+
+          <div class="login__field">
+            <i class="login__icon fas fa-lock"></i>
+            <input type="password" class="login__input" placeholder="Password" formControlName="password">
+          </div>
+
+          <!-- <div class="login__field">
+            <i class="login__icon fas fa-lock"></i>
+            <input type="password" class="login__input" placeholder="Role" formControlName="user_type">
+          </div> -->
+
+          <button type="submit" class="button login__submit"(click)="submit()" >
+            <span   class="button__text">Register Now</span>
+            <i class="button__icon fas fa-chevron-right"></i>
+          </button>
+          <li id="sign-in">
+            <p>  <a href="writer-login" style=" color:rgb(25, 43, 154);">Click here to Sign in</a></p>
+             </li>
+        </form>
+
+      </div>
+      <div class="screen__background">
+        <span class="screen__background__shape screen__background__shape4"></span>
+        <span class="screen__background__shape screen__background__shape3"></span>
+        <span class="screen__background__shape screen__background__shape2"></span>
+        <span class="screen__background__shape screen__background__shape1"></span>
+      </div>
+    </div>
+  </div>

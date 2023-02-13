@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Journal</title>
+  </head>
+  <body>
+
+    <!-- Journal Entry Section -->
+    <section class="section journal-section">
+      <div class="container-fluid">
+        <div class="container-row container-row-journal">
+          <div class="container-item container-item-journal">
+            <h1>Social Post Feeds</h1>
+            <hr>
+            <form id="entryForm" action="">
+              <label for="entry-title" class="journal-label">Title</label>
+
+              <!--  -->
+              <input
+                type="text"
+                name="entry-title"
+                id="entry-title"
+                readonly
+                disabled="disabled"
+                class="entry-text-title"
+                placeholder="Being Abused"
+              />
+              <label for="entry" class="journal-label">Content</label>
+              <textarea
+                name="daily-entry"
+                id="entry"
+                readonly
+                disabled="disabled"
+                class="entry-text-box"
+
+              >Well where do I start? I was born in Christchurch, New Zealand. I’m 23 years of age and this is my story. When I was five, my family left me and I was put into foster care for about two years. During my time in these homes I was sexually and physically abused. I was always told that I was nothing, a worthless person, that my family wanted nothing to do with me and that’s why I was put into foster care. I was beaten, thrown down stairs and pulled up by my hair. I remember one day I was in the bathtub crying because I just wanted someone to love me, and because of the crying my head was pushed under water. I started crying myself to sleep at night because I feared the abuse if someone caught me crying again. I never was given a chance to celebrate my birthday, which didn’t really matter at that point because the only thing that I had hoped for was a loving family.
+
+              When I turned seven, my grandparents were given custody of me so I was out of the foster care system and very excited. I thought this was the best thing to ever happen, but that feeling would change dramatically two weeks after I got there. One morning I woke up and my Nana had already gone to work, so it was just my step-grandfather and me there. As I was about to get out of bed, he walked into my room and sat down … taking total advantage of me. He forced me out of my bed and into the shower where he sexually abused me.
+
+              He continued to do this to me for months. One day I asked him, ‘What would you do if I told someone?’ He pulled out his belt, smacked me and said, ‘If you tell anybody I will hurt you. I will send you back to foster care and you will have nobody.’ I never wanted to go back to foster care, so I had to deal with the abuse for nine years. This man took my childhood days, my self-esteem, my trust and my life. I was turned into this boy who lived in fear daily and carried the shame of who I was. Each day of my life was a living hell.
+
+              As a teenager, I couldn't live in this world I was in, and desperately wanted to get out. I started inflicting pain on myself … I was admitted to the hospital so many times until I was 18. I was in pain and mentally in another world.</textarea>
+
+
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-outline-dark" type="button">Views</button>
+                <button class="btn btn-outline-dark" type="button">Comments</button>
+                <!-- <button routerLink="/editv" class="btn btn-outline-dark me-md-2" type="button">Edit</button>
+                <button routerLink="/editv" class="btn btn-outline-dark me-md-2" type="button">Delete</button> -->
+              </div>
+
+            </form>
+
+            
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Journal Entry Results -->
+    <section class="section sectionEntryResults" id="entryResultsSection">
+      <div class="container">
+        <div class="container-row entryResultRow"></div>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+
+  </body>
+
+</html>

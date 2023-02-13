@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark px=2">
+
+  <div class="side-nav-button p-2 me-3 text-light" (click)="SideNavToggle()">
+  </div>
+
+  <a href="#" class="navbar-brand px-4">ReadWrite</a>
+
+  <div class="navbar-nav me-auto"></div>
+
+  <form action="" class="d-flex me-5">
+    <input type="search" class="form-control me-2" placeholder="Search">
+    <button class="btn btn-outline-light" type="submit">Search</button>
+  </form>
+
+    <div class="profile-logo dropstart">
+      <button class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown">
+        <i class="fa-solid fa-gear"></i>
+      </button>
+
+      <ul class="dropdown-menu dropdown-menu-dark">
+        <li><a href="/" class="dropdown-item">Logout</a></li>
+        <li><a href="#" class="dropdown-item">Profile</a></li>
+      </ul>
+    </div>
+
+</nav>
